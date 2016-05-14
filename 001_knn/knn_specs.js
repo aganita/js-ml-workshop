@@ -56,6 +56,8 @@ describe('Testing the basic KNN functionality.', function(){
 
 		   Example Training Data: [ [ [1,2,3],0 ] , [ [1,2,4],0 ] , [ [-1,2,3],1 ] , ... ]
 		*/
+	
+
 		it('concatenates the points handed to the train function onto the points already within it', function(){
 			var knn = new KNN(10);
 			//Making fake data
@@ -79,7 +81,7 @@ describe('Testing the basic KNN functionality.', function(){
 		  However, if you implement these functions, it will be much easier to write predictSingle,
 		  and they do provide a useful way to break down the things that predictSingle will need to do.
 		*/
-		xdescribe('Optional helper functions to be used in predict and predictSingle', function(){ 
+		describe('Optional helper functions to be used in predict and predictSingle', function(){ 
 
 			/* The purpose of the function '_distance' is to find the Euclidean norm
 			   as between two vectors.
